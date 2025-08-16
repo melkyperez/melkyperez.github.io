@@ -1,0 +1,151 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #222;
+  color: #fff;
+  text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 25%;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+/* Header Info */
+.header-info {
+  flex: 1;
+  min-width: 250px;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.header-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-info h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.header-info p {
+  max-width: 600px;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  color: #1e90ff;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 35%;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .header-info h2 {
+    font-size: 1rem;
+  }
+}
